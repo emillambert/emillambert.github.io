@@ -11,12 +11,8 @@ export function LabGrid() {
         const card = (
           <motion.article
             className={`lab-card lab-${project.accent}`}
-            drag={reduceMotion ? false : true}
-            dragElastic={0.08}
-            dragSnapToOrigin
-            whileHover={reduceMotion ? undefined : { y: -7, rotate: index % 2 ? 0.5 : -0.5 }}
-            whileDrag={reduceMotion ? undefined : { scale: 1.035, rotate: index % 2 ? 2 : -2, zIndex: 20 }}
-            transition={{ type: "spring", stiffness: 260, damping: 24 }}
+            whileHover={reduceMotion ? undefined : { y: -6 }}
+            transition={{ type: "spring", stiffness: 300, damping: 26 }}
           >
             <span className="lab-index">{String(index + 1).padStart(2, "0")}</span>
             <p className="lab-eyebrow">{project.eyebrow}</p>

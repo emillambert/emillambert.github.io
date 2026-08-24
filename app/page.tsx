@@ -13,9 +13,8 @@ export default function Home() {
 
       <section className="lab-section" id="lab">
         <div className="section-heading lab-heading">
-          <p className="eyebrow">LAB / SIDE QUESTS</p>
-          <h2>Things I built because I wanted them to exist.</h2>
-          <p className="section-intro">Smaller experiments, research systems and useful oddities. Drag them around.</p>
+          <div><p className="eyebrow">02 / LAB / SIDE PROJECTS</p><h2>Side projects.</h2></div>
+          <p className="section-intro">Experiments, research systems and tools that did not need a six-month roadmap to become real.</p>
         </div>
         <LabGrid />
       </section>
@@ -23,7 +22,7 @@ export default function Home() {
       <section className="experience-section" id="about">
         <div className="section-heading compact-heading">
           <p className="eyebrow">EXPERIENCE</p>
-          <h2>Engineering when it is physical. Software when it is faster. Business when it has to survive.</h2>
+          <h2>Experience across engineering, software and business.</h2>
         </div>
         <div className="timeline">
           <article>
@@ -49,7 +48,7 @@ export default function Home() {
       </section>
 
       <section className="cv-callout">
-        <p className="eyebrow">WANT THE BORING VERSION?</p>
+        <p className="eyebrow">MORE DETAIL</p>
         <a href="/cv/" className="giant-link">View CV <span aria-hidden="true">↗</span></a>
       </section>
 

@@ -9,8 +9,8 @@ export function FlagshipProjects() {
   return (
     <section className="work-section" id="work">
       <div className="section-heading work-heading">
-        <p className="eyebrow">SELECTED WORK / 06</p>
-        <h2>Serious projects. Different kinds of proof.</h2>
+        <div><p className="eyebrow">01 / SELECTED WORK</p><h2>Selected work.</h2></div>
+        <p className="section-intro">Six systems across aerospace, software and startups. Different problems, same instinct: make the proof visible.</p>
       </div>
       <div className="flagship-list">
         {flagshipProjects.map((project) => (
@@ -23,7 +23,7 @@ export function FlagshipProjects() {
               <div className="project-facts">
                 {project.facts.map((fact) => <div key={fact.label}><strong>{fact.value}</strong><span>{fact.label}</span></div>)}
               </div>
-              <Link href={`/work/${project.slug}/`} className="project-link">View project <span>↗</span></Link>
+              <Link href={`/work/${project.slug}/`} className="project-link"><span>Read the case study</span><b>↗</b></Link>
             </div>
             <motion.div className="project-visual-wrap" whileHover={{ scale: 0.992 }} transition={{ type: "spring", stiffness: 220, damping: 24 }}>
               <ProjectVisual type={project.visual} />
