@@ -39,7 +39,7 @@ State: production static export, light theme, default content, homepage at rest.
 
 ## Follow-up polish
 
-- Repair the `emilwl.me` TLS certificate/custom-domain configuration so the live site is safe to open over HTTPS. Current blocker: Namecheap is signed out; `www` must point directly to `emillambert.github.io` before GitHub can issue the certificate.
+- Repair the `emilwl.me` TLS certificate/custom-domain configuration so the live site is safe to open over HTTPS. GitHub Pages is now publishing from the GitHub Actions workflow and the new homepage is live; current blocker: Namecheap is signed out, and `www` must point directly to `emillambert.github.io` before GitHub can issue the certificate.
 - Consider adding real project imagery later if it supports a specific case study; the current data panels intentionally avoid invented or placeholder imagery.
 
 final result: passed
